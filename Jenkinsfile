@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    NAME = "Delphine"
+    NAME = "Ellande"
   }
 
   stages {
