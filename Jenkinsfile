@@ -1,11 +1,11 @@
 pipeline{
 	agent { any }
 	environment{
-	      NAME = “Ellande”
+		NAME = “Ellande”
 	}
 	stages{
 		stage(“Coucou”){
 			sh “echo ${env.NAME}”
-			}
-}
+		}
+	}
 }
