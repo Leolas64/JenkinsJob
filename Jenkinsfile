@@ -1,11 +1,14 @@
-pipeline{
- agent { any }
- environment{
-  NAME = “Ellande”
- }
- stages{
-  stage(“Coucou”){
-  sh “echo ${env.NAME}”
+pipeline {
+  agent any
+  environment {
+    NAME = "Delphine"
   }
- }
+
+  stages {
+      stage("Coucou") {
+        steps {
+          echo "Coucou ${env.name}"
+      }
+    }
+  }
 }
